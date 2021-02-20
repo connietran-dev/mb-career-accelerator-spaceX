@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Rocket from './Rocket';
+import Launch from './Launch';
 
 // Bootstrap layout components
 import Container from 'react-bootstrap/Container';
@@ -32,20 +33,28 @@ function App({}: AppProps) {
             indicators={false}
             interval={10000}
           >
+
             <Carousel.Item>
               <Container fluid>
                 <Row>
+                  
+                  {/* Rocket Column */}
                   <Col xs={12} md={6} className="rocket-container">
                     Rocket
                     <Image src="./images/Falcon_9_Block_5_landing.png" />
-                  </Col>
-                  <Col xs={12} md={6} className="launch-container">
-                    Launch
                     <Rocket />
                   </Col>
+
+                  {/* Launch Column */}
+                  <Col xs={12} md={6} className="launch-container">
+                    Launch
+                    <Launch />
+                  </Col>
+
                 </Row>
               </Container>
             </Carousel.Item>
+            
             <Carousel.Item>
               <Container fluid>
                 <Row>

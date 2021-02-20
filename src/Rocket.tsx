@@ -60,7 +60,7 @@ const rocket = () => {
         <>
           <div>Name: {rocket.payload.name}</div>
           <div>Type: {rocket.payload.type}</div>
-          <div>Active: {rocket.payload.active}</div>
+          <div>Active: {rocket.payload.active.toString()}</div>
           <div>Stages: {rocket.payload.stages}</div>
           <div>Boosters: {rocket.payload.boosters}</div>
           <div>Cost Per Launch: {rocket.payload.cost_per_launch}</div>
